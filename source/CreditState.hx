@@ -90,8 +90,8 @@ class CreditState extends MusicBeatState
 			var text:FlxSprite = new FlxSprite();
 			switch (i) {
 				case 0:
-					icon = new CreditIcon(55, 128, 'Amor', 'https://www.youtube.com/channel/UCffme2uZNxvK4s51DDALlNA');
-					text = new FlxSprite(164, 141).loadGraphic(Paths.image('credits/text/creditAmor'));
+					icon = new CreditIcon(55, 128, 'Nibi', 'https://youtube.com/channel/UCKb1a_HvYqBHVRk7kvCz83Q');
+					text = new FlxSprite(164, 141).loadGraphic(Paths.image('credits/text/creditNibi'));
 				case 1:
 					icon = new CreditIcon(61, 243, 'Chris', 'https://twitter.com/TheMaskedChris');
 					text = new FlxSprite(169, 259).loadGraphic(Paths.image('credits/text/creditChris'));
