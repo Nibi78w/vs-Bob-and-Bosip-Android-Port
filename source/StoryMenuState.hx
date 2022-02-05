@@ -51,16 +51,12 @@ class StoryMenuState extends MusicBeatState
 
 	var weekNames:Array<Dynamic> = [
 		["tutorialText", '169', '292'],
-		["bobandbosipText", '175', '239'],
-		["inthebackgroundText", '170', '231'],
-		["bobtakeoverText", '170', '231']
+		["bobandbosipText", '175', '239']
 	];
 
 	var weekColors:Array<String> = [
 		"Orange",
-		"Blue",
-		"Sky",
-		"Ron"
+		"Blue"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -106,18 +102,7 @@ class StoryMenuState extends MusicBeatState
 		spookyMenu = FlxG.sound.play(Paths.music('nightmaremenu_remix'));//new FlxSound().loadEmbedded(Paths.music('nightmaremenu_remix'));
 		spookyMenu.volume = 0;
 		add(spookyMenu);
-		if (!FlxG.save.data.beatWeek) {
-			weekUnlocked[2] = false;
-			weekCharacters[2] = 'ITBgray';
-			weekColors[2] = 'Sky(desat)';
-			weekNames[2] = ["lockedOutITB", '170', '291'];
-		}
-		if (!FlxG.save.data.beatITB) {
-			weekUnlocked[3] = false;
-			weekCharacters[3] = 'Bob_and_Ron2';
-			weekColors[3] = 'Corrupt';
-			weekNames[3] = ["questionMark", '170', '291'];
-		}
+
 		#if windows
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Story Mode Menu", null);
