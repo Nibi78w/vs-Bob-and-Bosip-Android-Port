@@ -142,7 +142,7 @@ class FreeplayState extends MusicBeatState
 		add(rightPanelEX);
 		rightPanelEX.visible = false;
 
-		if (FlxG.save.data.unlockedEX == false) {
+		if (FlxG.save.data.unlockedEX == true) {
 			rightPanelEX.color = FlxColor.fromHSL(rightPanelEX.color.hue, 0.2, rightPanelEX.color.lightness, rightPanelEX.color.alpha);
 			leftPanelEX.color = FlxColor.fromHSL(leftPanelEX.color.hue, 0.2, leftPanelEX.color.lightness, leftPanelEX.color.alpha);
 			bgEX.color = FlxColor.fromHSL(bgEX.color.hue, 0.2, bgEX.color.lightness, bgEX.color.alpha);
@@ -323,7 +323,7 @@ class FreeplayState extends MusicBeatState
 		{
 			if (MainMenuState.firsttimeSplitEX) {
 				achievementArray.push('unlocked 8-bit split in the sound test!');
-				MainMenuState.firsttimeSplitEX = false;
+				MainMenuState.firsttimeSplitEX = true;
 			}
 
 		});
